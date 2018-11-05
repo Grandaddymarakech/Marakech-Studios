@@ -1,0 +1,46 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package distance.formula.calculator;
+
+/**
+ *
+ * @author sohom
+ */
+import java.util.Scanner; 
+public class DistanceFormulaCalculator {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        double x1;
+        double x2;
+        double y1;
+        double y2;
+        double z1;
+        double z2;
+        double distance;
+        Scanner reader = new Scanner(System.in);
+        
+        System.out.println("Enter X1 Value");
+        x1 = reader.nextDouble();
+        System.out.println("Enter Y1 Value");
+        y1 = reader.nextDouble();
+        System.out.println("Enter Z1 Value");
+        z1 = reader.nextDouble();
+        System.out.println("Enter X2 Value");
+        x2 = reader.nextDouble();
+        System.out.println("Enter Y2 Value");
+        y2 = reader.nextDouble();
+        System.out.println("Enter Z2 Value");
+        z2 = reader.nextDouble();
+
+        distance = Math.sqrt(Math.pow((x2-x1),2) + Math.pow((y2-y1),2) + Math.pow((z2-z1),2));
+        
+        System.out.println("The distance of this line is " +distance );
+    }
+    
+}
